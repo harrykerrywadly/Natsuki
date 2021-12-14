@@ -1,7 +1,7 @@
 #    Project By TeamNatsuki
 
 __help__ = """
-** ✨ Natsuki - A Powerful Telegram Group Manager ✨ **
+** ✨ Hannah - A Powerful Telegram Group Manager Bot ✨ **
 
 Powerful Abilities
 
@@ -13,9 +13,7 @@ Powerful Abilities
 
 • Channel Music Play 🎵
 
-Developer [SADEW JAYASEKARA](https://t.me/Itz_Sadew)
-
-Support Group [Support](https://t.me/NatsukiSupport_Official)
+Official Supporter [Support](https://t.me/weraofficialbot)
 
 """
 __mod_name__ = "About ⚡"
