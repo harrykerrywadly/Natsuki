@@ -50,7 +50,7 @@ from Natsuki import (
     StartTime,
     dispatcher,
     pbot,
-    telethn,
+    telethon,
     updater,
 )
 
@@ -63,39 +63,36 @@ from Natsuki.modules.helper_funcs.misc import paginate_modules
 from Natsuki.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-👋 Hey There, My Name is 𝗡𝗮𝘁𝘀𝘂𝗸𝗶. 
+👋 Hey There, My Name is 𝐇𝐚𝐧𝐧𝐚𝐡. 
 I'm a Powerfull Group Manager Bot With Cool Modules. feel free to add me to your groups!
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="Natsuki News 🙋‍♂️", url="https://t.me/Natsuki_Updates"
-        ),
-        InlineKeyboardButton(
-            text="Support Group 💬", url="https://t.me/NatsukiSupport_Official"
+            text="Commands Help ❓", callback_data="help_back"
         ),
     ],
     [
         InlineKeyboardButton(
-            text="Source 🗒", url="Github.com/Sadew451"
+            text="✅ Hannah Updates", url="https://t.me/Hannah_Updates"
         ),
         InlineKeyboardButton(
-            text="Command Help ❓", callback_data="help_back"
+            text="💬 Official Supporter", url="https://t.me/weraofficialbot"
         ),
     ],
     [
         InlineKeyboardButton(
             text="➕ Add To Me Your Group ➕",
-            url="t.me/TheNatsukiBot?startgroup=true",
+            url="t.me/Hannah_group_bot?startgroup=true",
         ),
     ],
 ]
 
-NATSUKI_IMG = "https://telegra.ph/file/2d0fa7e07eb1fe3983aba.jpg"
+NATSUKI_IMG = "https://telegra.ph/file/05b3904ce7e3b9eed917f.jpg"
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/2d0fa7e07eb1fe3983aba.jpg)
+*Main Commands :* [🤖](https://telegra.ph/file/05b3904ce7e3b9eed917f.jpg)
 
 /start: Starts me! You've probably already used this.
 /help: Click this, I'll let you know about myself!
@@ -111,7 +108,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [SADEW JAYASEKARA](t.me/Itz_Sadew)"""
+Support them  [WERA](t.me/weraofficialbot)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -371,8 +368,8 @@ def Natsuki_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"* Hi There  The name's {dispatcher.bot.first_name} \n\nAs  You I'm a next generational group management bot developed by Natsuki Updates.* "
-            f"\n\n Join [NatsukiUpdates](https://t.me/Natsuki_Updates) To Keep Yourself Updated About {dispatcher.bot.first_name}"
+            text=f"* Hi There  The name's {dispatcher.bot.first_name} \n\nAs  You I'm a next generational group management bot developed by Hannah Updates.* "
+            f"\n\n Join [Hannah Updates](https://t.me/Hannah_Updates) To Keep Yourself Updated About {dispatcher.bot.first_name}"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features"
             f"\n\nYou Can Know More About Me By Clicking The Below Buttons",
@@ -405,7 +402,7 @@ def Natsuki_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Natsuki Support](https://t.me/NatsukiSupport_Official).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by contact [Hannah Official Support](https://t.me/weraofficialbot).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -425,7 +422,6 @@ def Natsuki_about_callback(update, context):
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
             f"\n\nBased on [SDBOTsInifinity](https://t.me/SDBOTs_Inifinity)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by Sadew Jayasekara"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -487,7 +483,7 @@ def Natsuki_about_callback(update, context):
             f"\n✪ If you need to ask anything about \n  this bot, Go @{SUPPORT_CHAT}."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of TheNatsukiBot we are not resposible for anything."
+            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of The Hannah Bot we are not resposible for anything."
             f"\n\nFor any kind of help, related to this bot, Join @{SUPPORT_CHAT}."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
